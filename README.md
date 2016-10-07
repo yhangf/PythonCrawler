@@ -20,4 +20,4 @@
 
 ##### 10. [githubHot.py](https://github.com/Fenghuapiao/PythonCrawler/blob/master/githubHot.py): 抓取github上面热门语言所对应的项目，并把项目简介和项目主页地址保存到本地文件。
 
-##### 11.[pictureSpider.py](https://github.com/Fenghuapiao/PythonCrawler/blob/master/pictureSpider): 应一位知友的请求，抓取某网站上面所有的写真图片。
+##### 11.[pictureSpider.py](https://github.com/Fenghuapiao/PythonCrawler/blob/master/pictureSpider.py): 应一位知友的请求，抓取某网站上面所有的写真图片。
