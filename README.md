@@ -13,7 +13,7 @@
 ```
 
 
-- # spiderFile模块简介
+# spiderFile模块简介
 
 ##### 1.    [baidu_sy_img.py](https://github.com/Fenghuapiao/PythonCrawler/blob/master/spiderFile/baidu_sy_img.py): 抓取百度的‘高清摄影’图片
 
@@ -38,7 +38,7 @@
 ##### 11.[xz_picture_spider.py](https://github.com/Fenghuapiao/PythonCrawler/blob/master/spiderFile/xz_picture_spider.py): 应一位知友的请求，抓取某网站上面所有的写真图片。
 ##### 12.[one_img.py](https://github.com/Fenghuapiao/PythonCrawler/blob/master/spiderFile/one_img.py): 抓取one文艺网站的图片
 ---
-- # spiderAPI模块简介
+# spiderAPI模块简介
 #### 本模块提供一些网站的API爬虫接口，功能可能不是很全因此可塑性很大智慧的你如果有兴趣可以继续改进。
 ##### 1.大众点评
 ```python
