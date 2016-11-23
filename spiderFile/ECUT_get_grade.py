@@ -3,13 +3,14 @@ import requests
 import numpy as np
 import pandas as pd
 
+
 def warn(*args, **kw): pass
 import warnings
 warnings.warn = warn
 
-print('*'*30 + '东华理工大学' + '*'*30)
-print('*'*30 + '作者:杨航锋' + '*'*30)
-print('*'*30 + '版本:v1.0' + '*'*30)
+print('*' * 30 + '东华理工大学' + '*' * 30)
+print('*' * 30 + '作者:杨航锋' + '*' * 30)
+print('*' * 30 + '版本:v1.0' + '*' * 30)
 print('\n')
 print('请输你学号:')
 username = input()
@@ -18,6 +19,7 @@ password = input()
 print('\n')
 
 login_url = 'https://cas.ecit.cn/index.jsp?service=http://portal.ecit.cn/Authentication'
+
 
 def get_LT(login_url):
     html = requests.get(login_url, verify=False).text
@@ -86,12 +88,13 @@ elif select == '2':
     grade_data_.to_csv('./grade_data.csv', index=False)
     print('成绩已保存在运行此程序的文件夹')
 elif select == '3':
-    xw_grade = grade_data_[(grade_data_['课程名'] == '*数学分析(I)') | (grade_data_['课程名'] == '高等代数(I)')|\
-                           (grade_data_['课程名'] == 'C语言程序设计基础') | (grade_data_['课程名'] == '大学英语（II）')|\
-                           (grade_data_['课程名'] == '*常微分方程') | (grade_data_['课程名'] == '*概率论')|\
+    xw_grade = grade_data_[(grade_data_['课程名'] == '*数学分析(I)') | (grade_data_['课程名'] == '高等代数(I)') |
+                           (grade_data_['课程名'] == 'C语言程序设计基础') | (grade_data_['课程名'] == '大学英语（II）') |
+                           (grade_data_['课程名'] == '*常微分方程') | (grade_data_['课程名'] == '*概率论') |
                            (grade_data_['课程名'] == '数据结构')]
     print(xw_grade)
     print('\n')
-    avg_grade = np.sum((xw_grade.学分.astype(float) * xw_grade.成绩.astype(float))) / np.sum(xw_grade.学分.astype(float))
+    avg_grade = np.sum((xw_grade.学分.astype(float) * xw_grade.成绩.astype(float))) / \
+        np.sum(xw_grade.学分.astype(float))
     print('平均学分绩={0}'.format(avg_grade))
     input('按任意键结束')

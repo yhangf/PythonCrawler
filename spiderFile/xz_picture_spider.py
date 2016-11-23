@@ -8,10 +8,10 @@ def Spidermain(page=11):
     本爬虫的爬取策略为深度优先（DFS）
     '''
     main_url_ = 'http://www.rosiok.com/app/list_12_{0}.html'
-    for _ in range(1, page+1):
+    for _ in range(1, page + 1):
         main_url = main_url_.format(_)
         domain_url = 'http://www.rosiok.com{0}'
-        start_html = requests.get(main_url).content.decode('gb2312')    
+        start_html = requests.get(main_url).content.decode('gb2312')
         kids_url_regex = re.compile('<strong><a href=\'(.*?)\'>')
         kids_url = [domain_url.format(i) for i in re.findall(kids_url_regex, start_html)]
         for kid_url in kids_url:
@@ -39,6 +39,6 @@ def Spidermain(page=11):
                             file.write(s.get(pic_url, timeout=5).content)
                         except:
                             pass
-                        
+
 if __name__ == '__main__':
     Spidermain()

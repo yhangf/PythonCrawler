@@ -3,6 +3,7 @@ import requests
 import pandas as pd
 import numpy as np
 
+
 def hot_github(keyword):
     url = 'https://github.com/trending/{0}'.format(keyword)
     main_url = 'https://github.com{0}'
