@@ -36,7 +36,9 @@
 ##### 10. [github_hot.py](https://github.com/Fenghuapiao/PythonCrawler/blob/master/spiderFile/github_hot.py): 抓取github上面热门语言所对应的项目，并把项目简介和项目主页地址保存到本地文件。
 
 ##### 11.[xz_picture_spider.py](https://github.com/Fenghuapiao/PythonCrawler/blob/master/spiderFile/xz_picture_spider.py): 应一位知友的请求，抓取某网站上面所有的写真图片。
-##### 12.[one_img.py](https://github.com/Fenghuapiao/PythonCrawler/blob/master/spiderFile/one_img.py): 抓取one文艺网站的图片
+##### 12.[one_img.py](https://github.com/Fenghuapiao/PythonCrawler/blob/master/spiderFile/one_img.py): 抓取one文艺网站的图片。
+##### 13.[get_baike.py](https://github.com/Fenghuapiao/PythonCrawler/blob/master/spiderFile/get_baike.py): 任意输入一个关键词抓取百度百科的介绍。
+
 ---
 # spiderAPI模块简介
 #### 本模块提供一些网站的API爬虫接口，功能可能不是很全因此可塑性很大智慧的你如果有兴趣可以继续改进。
