@@ -1,16 +1,28 @@
-﻿# PythonCrawler: 用python编写的爬虫项目集合
 ```
- (                                                                        
- )\ )          )    )               (                       (             
-(()/( (     ( /( ( /(               )\   (       )  (  (    )\   (   (    
- /(_)))\ )  )\()))\())  (    (    (((_)  )(   ( /(  )\))(  ((_) ))\  )(   
-(_)) (()/( (_))/((_)\   )\   )\ ) )\___ (()\  )(_))((_)()\  _  /((_)(()\  
-| _ \ )(_))| |_ | |(_) ((_) _(_/(((/ __| ((_)((_)_ _(()((_)| |(_))   ((_)
-|  _/| || ||  _|| ' \ / _ \| ' \))| (__ | '_|/ _` |\ V  V /| |/ -_) | '_|
-|_|   \_, | \__||_||_|\___/|_||_|  \___||_|  \__,_| \_/\_/ |_|\___| |_|   
-      |__/  
-                                                —————— by yanghangfeng
+             (                                                                        
+             )\ )          )    )               (                       (             
+            (()/( (     ( /( ( /(               )\   (       )  (  (    )\   (   (    
+             /(_)))\ )  )\()))\())  (    (    (((_)  )(   ( /(  )\))(  ((_) ))\  )(   
+            (_)) (()/( (_))/((_)\   )\   )\ ) )\___ (()\  )(_))((_)()\  _  /((_)(()\  
+            | _ \ )(_))| |_ | |(_) ((_) _(_/(((/ __| ((_)((_)_ _(()((_)| |(_))   ((_)
+            |  _/| || ||  _|| ' \ / _ \| ' \))| (__ | '_|/ _` |\ V  V /| |/ -_) | '_|
+            |_|   \_, | \__||_||_|\___/|_||_|  \___||_|  \__,_| \_/\_/ |_|\___| |_|   
+                  |__/  
+                                                            —————— by yanghangfeng
 ```
+# <p align="center">PythonCrawler: 用  python编写的爬虫项目集合</p>
+<p align="center">
+    <a href="https://github.com/Fenghuapiao/PythonCrawler/blob/master/LICENSE">
+        <img src="https://img.shields.io/cocoapods/l/EFQRCode.svg?style=flat">
+        </a>
+    <a href="">
+        <img src="https://img.shields.io/badge/未完-间断性更新-orange.svg">
+        </a>
+    <a href="https://github.com/python/cpython">
+        <img src="https://img.shields.io/badge/language-python-ff69b4.svg">
+        </a>
+</p>
+
 
 
 # spiderFile模块简介
