@@ -81,7 +81,7 @@ restaurantlist=restaurantList('http://www.dianping.com/search/category/2/10/p2')
 ```
 
 ##### 2.获取代理IP
-爬取http://proxy.ipcn.org，获取可用代理
+爬取[代理IP](http://proxy.ipcn.org)
 ```python
 from spiderAPI.proxyip import get_enableips
 
