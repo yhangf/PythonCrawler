@@ -21,6 +21,12 @@
     <a href="https://github.com/python/cpython">
         <img src="https://img.shields.io/badge/language-python-ff69b4.svg">
         </a>
+    <a href="https://github.com/Fenghuapiao/PythonCrawler">
+    <img src="https://img.shields.io/github/stars/Fenghuapiao/PythonCrawler.svg?style=social&label=Star">
+        </a>
+    <a href="https://github.com/Fenghuapiao/PythonCrawler">
+    <img src="https://img.shields.io/github/forks/Fenghuapiao/PythonCrawler.svg?style=social&label=Fork">
+        </a>
 </p>
 
 
