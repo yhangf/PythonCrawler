@@ -8,6 +8,8 @@ mood  : 嗯，比较无聊，甚至还有点想吃黄焖鸡米饭😋
 
 import os
 import random
+import functools
+
 from PIL import Image
 from selenium import webdriver
 
@@ -19,7 +21,7 @@ class fuckCTF:
         self.login_url = "http://hetianlab.com/loginLab.do"
         self.username = username
         self.old_password = old_password
-        self.new_password = (self.yield_new_password(), "111111")[0]
+        self.new_password = (self.yield_new_password(), "******")[0]
         self.options = webdriver.FirefoxOptions()
         self.options.add_argument("-headless")
         self.browser = webdriver.Firefox(options=self.options)
@@ -49,9 +51,10 @@ class fuckCTF:
         self.browser.find_element_by_class_name("check")
         print("get_password_setting_page running ok!")
     
+    @gen_decorator
     def yield_new_password(self):
         strings = list("abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()")
-        return "".join(random.choices(strings, k=6))
+        yield "".join(random.choices(strings, k=6))
     
     def setting_password(self):
         self.browser.find_element_by_id("oldpwd").clear()
@@ -113,7 +116,20 @@ class fuckCTF:
         except:
             self.save_failed_data()
 
-            
+
+def gen_decorator(gen):
+    @functools.wraps(gen)
+    def inner(*args, **kwargs):
+        return next(gen(*args, **kwargs))
+    return inner
+
+
+@gen_decorator
+def yield_new_password():
+    strings = list("abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()")
+    yield "".join(random.choices(strings, k=6))
+     
+     
 def yield_usernames(n):
     prefix = "ctf2018_gzhu"
     postfix = "@dh.com"
