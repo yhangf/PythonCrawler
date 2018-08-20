@@ -61,6 +61,8 @@
 
 ##### 14.[kantuSpider.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/kantuSpider.py): 抓取看图网站上的所有图片。
 
+##### 15.[fuckCTF.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/fuckCTF.py): 通过selenium模拟登入合天网站，自动修改原始密码。
+
 ---
 # spiderAPI模块简介
 #### 本模块提供一些网站的API爬虫接口，功能可能不是很全因此可塑性很大智慧的你如果有兴趣可以继续改进。
