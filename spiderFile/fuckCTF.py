@@ -1,3 +1,10 @@
+
+"""
+author: 杨航锋
+date：2018.8.19
+"""
+     
+
 import os
 import random
 from PIL import Image
