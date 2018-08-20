@@ -122,12 +122,6 @@ def gen_decorator(gen):
     def inner(*args, **kwargs):
         return next(gen(*args, **kwargs))
     return inner
-
-
-@gen_decorator
-def yield_new_password():
-    strings = list("abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()")
-    yield "".join(random.choices(strings, k=6))
      
      
 def yield_usernames(n):
