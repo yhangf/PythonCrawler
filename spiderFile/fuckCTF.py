@@ -138,5 +138,5 @@ def yield_usernames(n):
     
 if __name__ == "__main__":
     for username in yield_usernames(100):
-        ctfer = fuckCTF(username, "111111")
+        ctfer = fuckCTF(username, "******")
         ctfer.main()
