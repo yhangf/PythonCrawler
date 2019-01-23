@@ -63,6 +63,8 @@
 
 ##### 15.[fuckCTF.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/fuckCTF.py): 通过selenium模拟登入合天网站，自动修改原始密码。
 
+##### 16.[one_update.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/one_update.py): 更新抓取one文艺网站的代码，添加一句箴言的抓取。
+
 ---
 # spiderAPI模块简介
 #### 本模块提供一些网站的API爬虫接口，功能可能不是很全因此可塑性很大智慧的你如果有兴趣可以继续改进。
