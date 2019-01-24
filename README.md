@@ -11,6 +11,7 @@
                                                                 —————— by yanghangfeng
 ```
 # <p align="center">PythonCrawler: 用  python编写的爬虫项目集合</p>
+
 <p align="center">
     <a href="https://github.com/yhangf/PythonCrawler/blob/master/LICENSE">
         <img src="https://img.shields.io/cocoapods/l/EFQRCode.svg?style=flat">
@@ -67,8 +68,11 @@
 
 ---
 # spiderAPI模块简介
+
 #### 本模块提供一些网站的API爬虫接口，功能可能不是很全因此可塑性很大智慧的你如果有兴趣可以继续改进。
+
 ##### 1.大众点评
+
 ```python
 from spiderAPI.dianping import *
 
@@ -100,7 +104,8 @@ enableips=get_enableips()
 ```
 
 ##### 3.百度地图
-百度地图提供的API,对查询有一些限制，这里找出了web上查询的接口
+
+百度地图提供的API,对查询有一些限制，这里找出了web上查询的接口。
 ```python
 from spiderAPI.baidumap import *
 
