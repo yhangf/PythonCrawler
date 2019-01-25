@@ -10,7 +10,7 @@
                     |__/  
                                                                 —————— by yanghangfeng
 ```
-# <p align="center">PythonCrawler: 用  python编写的爬虫项目集合</p>
+# <p align="center">PythonCrawler: 用  python编写的爬虫项目集合:bug:</p>
 
 <p align="center">
     <a href="https://github.com/yhangf/PythonCrawler/blob/master/LICENSE">
@@ -29,7 +29,6 @@
     <img src="https://img.shields.io/github/forks/yhangf/PythonCrawler.svg?style=social&label=Fork">
         </a>
 </p>
-
 
 
 # spiderFile模块简介
