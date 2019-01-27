@@ -42,11 +42,11 @@ def get_img(page, headers):
     reg = re.compile('http://.*?\.jpg')
     imglist1 = re.findall(reg, page)
     imglist2 = imglist1[0: len(imglist1): 3]
-#     [img_url_list.append(i) for i in imglist if not i in img_url_list]
+    #   [img_url_list.append(i) for i in imglist if not i in img_url_list]
     x = 0
     for imgurl in imglist2:
         bin = requests.get(imgurl, headers=headers).content
-        with open('E:/Pic2/%s.jpg' % x, 'wb') as file:
+        with open('./%s.jpg' % x, 'wb') as file:
             file.write(bin)
             x += 1
 
