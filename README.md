@@ -33,7 +33,7 @@
 
 # spiderFile模块简介
 
-1.    [baidu_sy_img.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/baidu_sy_img.py): **抓取百度的‘高清摄影’图片。**
+1.    [baidu_sy_img.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/baidu_sy_img.py): **抓取百度的`高清摄影`图片。**
 
 2.  [baidu_wm_img.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/baidu_wm_img.py): **抓取百度图片`唯美意境`模块。**
 
