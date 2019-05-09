@@ -49,6 +49,7 @@
 14.    [kantuSpider.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/kantuSpider.py): **抓取看图网站上的所有图片。**
 15.    [fuckCTF.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/fuckCTF.py): **通过selenium模拟登入合天网站，自动修改原始密码。**
 16.    [one_update.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/one_update.py): **更新抓取one文艺网站的代码，添加一句箴言的抓取。**
+17.    [get_history_weather.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/get_history_weather.py): **抓取广州市2019年第一季度的天气数据。**
 
 ---
 # spiderAPI模块简介
