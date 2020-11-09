@@ -50,7 +50,7 @@
 15.    [fuckCTF.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/fuckCTF.py): **通过selenium模拟登入合天网站，自动修改原始密码。**
 16.    [one_update.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/one_update.py): **更新抓取one文艺网站的代码，添加一句箴言的抓取。**
 17.    [get_history_weather.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/get_history_weather.py): **抓取广州市2019年第一季度的天气数据。**
-
+18.    [search_useful_camera_ip_address.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/search_useful_camera_ip_address.py): **模拟登入某扫描网站获取潜在的摄像头IP地址，然后使用弱密码验证筛选出可登录的摄像头IP地址。**
 ---
 # spiderAPI模块简介
 
