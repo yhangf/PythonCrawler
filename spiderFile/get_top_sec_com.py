@@ -38,7 +38,7 @@ class getTopSecCom:
         all_shares = []
         for sec_com in self.useful_sec_com_list:
             url = self.shares_api + sec_com[0]
-            response = rq.get(url, headers=headers).content.decode("utf-8")
+            response = rq.get(url, headers=self.headers).content.decode("utf-8")
             market_value = re.search("<td>总市值：<span>(.*?)亿</span>", response)
             if market_value:
                 all_shares.append([*sec_com, market_value.groups()[0]])
@@ -49,10 +49,10 @@ class getTopSecCom:
         df = pd.DataFrame(all_shares, columns=["股票代码", "公司", "市值(亿)"])
         df["市值(亿)"] = df["市值(亿)"].astype(float)
         df.sort_values(by="市值(亿)", ascending=False, inplace=True)
-        height = 0.18 * df.shape[0]
+        height = 0.2 * df.shape[0]
         if self.top and 0< self.top <= df.shape[0]:
             df = df.iloc[:self.top, :]
-            height = 0.18 * self.top
+            height = 0.2 * self.top
         df.index = range(1, df.shape[0]+1)
         
         plt.rcParams['font.sans-serif'] = ['SimHei']  
@@ -63,5 +63,5 @@ class getTopSecCom:
         ax = fig.add_subplot(111, frame_on=False)
         ax.xaxis.set_visible(False)  
         ax.yaxis.set_visible(False)  
-        _ = table(ax, df, loc="center")  
-        fig.savefig(save_path)
+        _ = pd.plotting.table(ax, df, loc="center", cellLoc="center")  
+        plt.savefig(save_path)
