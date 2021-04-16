@@ -1,6 +1,8 @@
 import re
 import os
 import joblib
+import asyncio
+import aiohttp
 import requests as rq
 
 import pandas as pd
@@ -33,6 +35,26 @@ class getTopSecCom:
         with open("useful_sec_com_list", "wb") as fp:
             joblib.dump(useful_sec_com_list, fp)
         return useful_sec_com_list
+
+    async def async_get_shares_details(self, sec_com, url):
+        async with aiohttp.ClientSession() as session:
+            async with session.get(url, headers=self.headers) as response:
+                html = await response.text()
+                market_value = re.search("<td>总市值：<span>(.*?)亿</span>", html)
+                if market_value:
+                    return [*sec_com, market_value.groups()[0]]
+                
+    async def async_get_all_shares(self):
+        tasks = []
+        for sec_com in self.useful_sec_com_list:
+            url = self.shares_api + sec_com[0]
+            tasks.append(
+                asyncio.create_task(
+                    self.async_get_shares_details(sec_com, url)
+                )
+            )
+        done, pendding = await asyncio.wait(tasks)
+        return [share.result() for share in done if share.result()]
     
     def get_shares_details(self):
         all_shares = []
@@ -45,7 +67,8 @@ class getTopSecCom:
         return all_shares
     
     def yield_picture(self, save_path):
-        all_shares = self.get_shares_details()
+        # all_shares = self.get_shares_details() # 同步代码
+        all_shares = asyncio.run(self.async_get_all_shares()) # 异步代码
         df = pd.DataFrame(all_shares, columns=["股票代码", "公司", "市值(亿)"])
         df["市值(亿)"] = df["市值(亿)"].astype(float)
         df.sort_values(by="市值(亿)", ascending=False, inplace=True)
