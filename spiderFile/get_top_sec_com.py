@@ -87,4 +87,4 @@ class getTopSecCom:
         ax.xaxis.set_visible(False)  
         ax.yaxis.set_visible(False)  
         _ = pd.plotting.table(ax, df, loc="center", cellLoc="center")  
-        plt.savefig(save_path)
+        plt.savefig(save_path, bbox_inches="tight")
