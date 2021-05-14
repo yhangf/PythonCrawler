@@ -8,6 +8,8 @@ import requests as rq
 
 import pandas as pd
 import matplotlib.pyplot as plt
+# import nest_asyncio
+# nest_asyncio.apply()
 
 class getTopSecCom:
     def __init__(self, top=None):
