@@ -1,5 +1,6 @@
 import re
 import os
+import time
 import joblib
 import asyncio
 import aiohttp
@@ -71,20 +72,22 @@ class getTopSecCom:
         all_shares = asyncio.run(self.async_get_all_shares()) # 异步代码
         df = pd.DataFrame(all_shares, columns=["股票代码", "公司", "市值(亿)"])
         df["市值(亿)"] = df["市值(亿)"].astype(float)
+        date = time.strftime("%Y年%m月%d日", time.localtime())
         df.sort_values(by="市值(亿)", ascending=False, inplace=True)
-        height = 0.2 * df.shape[0]
-        if self.top and 0< self.top <= df.shape[0]:
-            df = df.iloc[:self.top, :]
-            height = 0.2 * self.top
         df.index = range(1, df.shape[0]+1)
         
         plt.rcParams['font.sans-serif'] = ['SimHei']  
         plt.rcParams['axes.unicode_minus'] = False
             
         
-        fig = plt.figure(figsize=(2.5, height), dpi=400)
+        fig = plt.figure(dpi=400)
         ax = fig.add_subplot(111, frame_on=False)
         ax.xaxis.set_visible(False)  
-        ax.yaxis.set_visible(False)  
-        _ = pd.plotting.table(ax, df, loc="center", cellLoc="center")  
+        ax.yaxis.set_visible(False)
+        _ = pd.plotting.table(ax, df, loc="best", cellLoc="center")
+        ax.set_title(f"{date}A股网安版块公司市值排名", fontsize=10)        
         plt.savefig(save_path, bbox_inches="tight")
+
+if __name__ == "__main__":
+    m = getTopSecCom()
+    m.yield_picture("rank.png")
