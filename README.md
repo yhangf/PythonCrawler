@@ -10,7 +10,7 @@
       |__/  
                                                   —————— by yanghangfeng
 ```
-# <p align="center">PythonCrawler: 用  python编写的爬虫项目集合:bug:</p>
+# <p align="center">PythonCrawler: 用  python编写的爬虫项目集合:bug:(本项目代码仅作为爬虫技术学习之用，学习者千万要遵循中华人民共和国法律！)</p>
 
 <p align="center">
     <a href="https://github.com/yhangf/PythonCrawler/blob/master/LICENSE">
@@ -38,7 +38,7 @@
 3.    [get_photos.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/get_photos.py): **抓取百度贴吧某话题下的所有图片。**
 4.    [get_web_all_img.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/get_web_all_img.py): **抓取整个网站的图片。**
 5.    [lagou_position_spider.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/lagou_position_spider.py): **任意输入关键字，一键抓取与关键字相关的职位招聘信息，并保存到本地文件。**
-6.    [student_img.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/student_img.py): **基于本学校官网的url漏洞，获取所有注册学生学籍证件照。**
+6.    [student_img.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/student_img.py): **自动化获取学籍证件照。**
 7.    [JD_spider.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/JD_spider.py): **大批量抓取京东商品id和标签。**
 8.    [ECUT_pos_html.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/ECUT_pos_html.py): **抓取学校官网所有校园招聘信息，并保存为html格式，图片也会镶嵌在html中。**
 9.    [ECUT_get_grade.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/ECUT_get_grade.py): **模拟登陆学校官网，抓取成绩并计算平均学分绩。**
