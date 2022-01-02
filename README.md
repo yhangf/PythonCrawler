@@ -50,7 +50,7 @@
 15.    [fuckCTF.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/fuckCTF.py): **通过selenium模拟登入合天网站，自动修改原始密码。**
 16.    [one_update.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/one_update.py): **更新抓取one文艺网站的代码，添加一句箴言的抓取。**
 17.    [get_history_weather.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/get_history_weather.py): **抓取广州市2019年第一季度的天气数据。**
-18.    [search_useful_camera_ip_address.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/search_useful_camera_ip_address.py): **模拟登入某扫描网站获取潜在的摄像头IP地址，然后使用弱密码验证筛选出可登录的摄像头IP地址。**
+18.    [search_useful_camera_ip_address.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/search_useful_camera_ip_address.py): **摄像头弱密码安全科普。**
 19.    [get_top_sec_com.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/get_top_sec_com.py): **异步编程获取A股市场网络安全版块公司市值排名情况，并以图片格式保存下来。**
 20.    [get_tf_accident_info.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/get_tj_accident_info.py): **同步和异步编程结合获取天津市应急管理局所有事故信息。**
 ---
