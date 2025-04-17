@@ -30,6 +30,18 @@
         </a>
 </p>
 
+# IPWO全球代理资源 | 为采集、跨境与测试项目提供支持（免费试用，爬虫使用强烈推荐！！！）
+### 官网地址
+[👉 访问 IPWO 官网](https://www.ipwo.net/?code=WSESV2ONN)
+### 产品简介
+* 免费试用，先体验再选择
+* 9000万+真实住宅IP，覆盖220+国家和地区
+* 支持动态住宅代理、静态住宅代理（ISP）
+* 适用于数据抓取、电商、广告验证、SEO监控等场景
+* 支持HTTP/HTTPS/SOCKS5协议，兼容性强
+* 纯净IP池，实时更新，99.9%连接成功率
+* 支持指定国家城市地区访问，保护隐私
+
 # spiderFile模块简介
 
 1.    [baidu_sy_img.py](https://github.com/yhangf/PythonCrawler/blob/master/spiderFile/baidu_sy_img.py): **抓取百度的`高清摄影`图片。**
